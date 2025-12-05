@@ -1,5 +1,5 @@
 services:
   web:
-    image: ${USER_DOCKER}/2048-fantaofan
+    image: ${DOCKER_USER}/2048-fantaofan
     ports:
       - "9999:80"
