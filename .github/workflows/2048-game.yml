@@ -1,5 +1,5 @@
 name: Build, Push and Deploy Docker Image
-run-name: Build, Push and Deploy Docker Image
+run-name: Build, Push and Deploy Image
 on:
   push:
     branches:
@@ -13,7 +13,7 @@ jobs:
   build-push-image:
   steps:
     - name: Check out repository code
-      uses: action/checkou@v4
+      uses: actions/checkou@v4
     - name: Build Image
       run: docker build -t $IMAGE_NAME .
     - name: List Image
