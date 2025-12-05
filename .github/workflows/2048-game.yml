@@ -7,7 +7,7 @@ on:
 
 env:
   IMAGE_NAME: "${{ secret.USER_DOCKER }}/2048-fantaofan"
-  USER_DOCKER: "${{ secret.USER_DOCKER }}
+  USER_DOCKER: "${{ secret.USER_DOCKER }}"
 jobs:
   build-push-image:
   steps:
