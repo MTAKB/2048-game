@@ -2,7 +2,7 @@ name: Build, Push and Deploy Docker Image
 run-name: Build, Push and Deploy Docker Image
 on:
   push:
-    branch:
+    branches:
       - main
 
 env:
